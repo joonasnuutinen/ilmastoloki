@@ -1,0 +1,11 @@
+baseURL = 'http://example.org/'
+languageCode = 'fi-FI'
+title = 'Ilmastoloki'
+theme = 'ananke'
+
+DefaultContentLanguage = "fi"
+
+[params]
+  body_classes = "ma0 avenir bg-near-black"
+  post_content_classes = "avenir"
+  text_color = "near-white"
