@@ -1,21 +1,11 @@
 ---
 title: Ilmastoloki
+type: list
+layout: layouts/index.njk
 ---
 
-<!DOCTYPE html>
-<html lang="fi">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
-  </body>
-</html>
 <ul>
-  {% for post in search.pages("type=blog", "date=desc") | data %}
+  {% for post in search.pages("type=post", "date=desc") | data %}
     <li>
       <time datetime="{{ post.date | date('yyyy-MM-dd') }}">{{ post.date | date('d.M.yyyy') }}</time>
       <a href="{{ post.url }}">{{ post.title }}</a>
