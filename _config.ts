@@ -5,6 +5,6 @@ const site = lume({
   src: "./src",
 });
 
-site.use(date());
+site.use(date()).loadAssets([".css"]);
 
 export default site;
